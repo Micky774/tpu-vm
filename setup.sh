@@ -1,16 +1,20 @@
 #------ USAGE-----------------
-# curl https://github.com/Micky774/tpu-vm/blob/main/setup.sh | bash
+# curl https://raw.githubusercontent.com/Micky774/tpu-vm/main/setup.sh | bash
 #-----------------------------
 
-sudo apt update
-sudo apt-get install git -y
+if [ $# -eq 0 ]
+  then
+    sudo apt update
+    sudo apt-get install git -y
 
-"${SHELL}" <(curl -L micro.mamba.pm/install.sh) << START_ARGS
+    "${SHELL}" <(curl -L micro.mamba.pm/install.sh) << START_ARGS
 
-y
-y
+    y
+    y
 
-START_ARGS
+    START_ARGS
+    exec "$startup.sh" dummy_arg
+fi
 
 source ~/.bashrc
 micromamba create -n flax python~=3.10.0 <<< "y"
