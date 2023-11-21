@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 #------ USAGE-----------------
 # curl https://raw.githubusercontent.com/Micky774/tpu-vm/main/setup.sh -o setup.sh
 # setup.sh
