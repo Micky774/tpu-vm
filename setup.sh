@@ -1,5 +1,5 @@
 #------ USAGE-----------------
-# curl https://gist.githubusercontent.com/Micky774/7d5b38478d9a9556142ecf01856d1a88/raw/e467dfd604656d97cf441e5282f8dc281d375a18/tpu_start.sh | bash
+# curl https://github.com/Micky774/tpu-vm/blob/main/setup.sh | bash
 #-----------------------------
 
 sudo apt update
