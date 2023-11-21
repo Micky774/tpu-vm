@@ -1,5 +1,6 @@
 #------ USAGE-----------------
-# curl https://raw.githubusercontent.com/Micky774/tpu-vm/main/setup.sh | bash
+# curl https://raw.githubusercontent.com/Micky774/tpu-vm/main/setup.sh -o setup.sh
+# setup.sh
 #-----------------------------
 
 if [ $# -eq 0 ]
@@ -8,7 +9,7 @@ if [ $# -eq 0 ]
     sudo apt-get install git -y
 
     "${SHELL}" <(curl -L micro.mamba.pm/install.sh) <<< "\ny\ny\n\n"
-    exec "$startup.sh" dummy_arg
+    exec setup.sh dummy_arg
 else
     source ~/.bashrc
     micromamba create -n flax python~=3.10.0 <<< "y"
