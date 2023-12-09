@@ -2,7 +2,7 @@
 
 #------ USAGE-----------------
 # curl https://raw.githubusercontent.com/Micky774/tpu-vm/main/setup.sh -o setup.sh
-# setup.sh
+# . ./setup.sh
 #-----------------------------
 
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
