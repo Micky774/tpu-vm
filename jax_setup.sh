@@ -1,3 +1,4 @@
 #!/bin/bash
 
-pip install jax[tpu] -f https://storage.googleapis.com/jax-releases/libtpu_releases.html
+cd ~
+git clone https://github.com/micky774/jax
