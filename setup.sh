@@ -11,7 +11,7 @@ sudo apt-get install git -y
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh) <<< "\ny\ny\n\n"
 source ~/.bashrc
 
-micromamba create -n generic python~=3.10.0 gh <<< "y"
+micromamba create -n generic python~=3.10.0 gh numpy build <<< "y"
 micromamba activate generic
 
 # Additional setup scripts
