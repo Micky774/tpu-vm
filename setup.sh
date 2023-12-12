@@ -8,7 +8,7 @@
 sudo apt update
 sudo apt-get install git -y
 
-"${SHELL}" <(curl -L micro.mamba.pm/install.sh) <<< "\ny\ny\n\n"
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 source ~/.bashrc
 
 micromamba create -n generic python~=3.10.0 gh numpy build <<< "y"
@@ -21,3 +21,4 @@ curl https://raw.githubusercontent.com/Micky774/tpu-vm/main/jax_setup.sh -o jax_
 
 # Aliases
 alias bzbuild="bazel build --test_output=all --spawn_strategy=sandboxed //xla/..."
+alias jaxbuild="python build/build.py --bazel_options=--override_repository=xla=~/xla"
